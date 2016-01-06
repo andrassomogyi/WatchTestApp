@@ -11,6 +11,6 @@
 
 @interface RowController : NSObject
 
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *rowLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *rowLabel;
 
 @end

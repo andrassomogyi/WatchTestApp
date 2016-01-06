@@ -10,6 +10,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ModalInterfaceController : WKInterfaceController
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceLabel *modalLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *modalLabel;
 
 @end

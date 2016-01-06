@@ -11,6 +11,6 @@
 
 @interface InterfaceController : WKInterfaceController
 
-@property (unsafe_unretained, nonatomic) IBOutlet WKInterfaceTable *table;
+@property (weak, nonatomic) IBOutlet WKInterfaceTable *table;
 
 @end
