@@ -23,6 +23,8 @@
 		D66FB4211C3C5B8F001EBC41 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FB4201C3C5B8F001EBC41 /* ComplicationController.m */; };
 		D66FB4231C3C5B8F001EBC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66FB4221C3C5B8F001EBC41 /* Assets.xcassets */; };
 		D66FB4271C3C5B8F001EBC41 /* WatchTarget.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D66FB4001C3C5B8F001EBC41 /* WatchTarget.app */; };
+		D6D596301C3D669900240FE4 /* RowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D5962F1C3D669900240FE4 /* RowController.m */; };
+		D6D596331C3D70B600240FE4 /* ModalInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D596321C3D70B600240FE4 /* ModalInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,10 @@
 		D66FB4201C3C5B8F001EBC41 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
 		D66FB4221C3C5B8F001EBC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D66FB4241C3C5B8F001EBC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D5962E1C3D669900240FE4 /* RowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowController.h; sourceTree = "<group>"; };
+		D6D5962F1C3D669900240FE4 /* RowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowController.m; sourceTree = "<group>"; };
+		D6D596311C3D70B600240FE4 /* ModalInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalInterfaceController.h; sourceTree = "<group>"; };
+		D6D596321C3D70B600240FE4 /* ModalInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,7 @@
 		D66FB4101C3C5B8F001EBC41 /* WatchTarget Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5962D1C3D668500240FE4 /* Controllers */,
 				D66FB4131C3C5B8F001EBC41 /* InterfaceController.h */,
 				D66FB4141C3C5B8F001EBC41 /* InterfaceController.m */,
 				D66FB4161C3C5B8F001EBC41 /* ExtensionDelegate.h */,
@@ -196,6 +203,17 @@
 				D66FB4121C3C5B8F001EBC41 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6D5962D1C3D668500240FE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5962E1C3D669900240FE4 /* RowController.h */,
+				D6D5962F1C3D669900240FE4 /* RowController.m */,
+				D6D596311C3D70B600240FE4 /* ModalInterfaceController.h */,
+				D6D596321C3D70B600240FE4 /* ModalInterfaceController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,9 +357,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D596301C3D669900240FE4 /* RowController.m in Sources */,
 				D66FB4181C3C5B8F001EBC41 /* ExtensionDelegate.m in Sources */,
 				D66FB4151C3C5B8F001EBC41 /* InterfaceController.m in Sources */,
 				D66FB41B1C3C5B8F001EBC41 /* NotificationController.m in Sources */,
+				D6D596331C3D70B600240FE4 /* ModalInterfaceController.m in Sources */,
 				D66FB41E1C3C5B8F001EBC41 /* GlanceController.m in Sources */,
 				D66FB4211C3C5B8F001EBC41 /* ComplicationController.m in Sources */,
 			);
@@ -571,6 +591,7 @@
 				D66FB3FD1C3C5B1A001EBC41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D66FB4281C3C5B8F001EBC41 /* Build configuration list for PBXNativeTarget "WatchTarget Extension" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +600,7 @@
 				D66FB42A1C3C5B8F001EBC41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D66FB42C1C3C5B8F001EBC41 /* Build configuration list for PBXNativeTarget "WatchTarget" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +609,7 @@
 				D66FB42E1C3C5B8F001EBC41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

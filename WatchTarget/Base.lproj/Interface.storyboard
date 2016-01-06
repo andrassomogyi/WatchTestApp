@@ -10,11 +10,41 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label width="136" alignment="left" text="The Watch App" id="GIQ-Ym-cXV"/>
+                        <table alignment="left" id="9vF-4h-dtQ">
+                            <items>
+                                <tableRow identifier="MainRowType" id="DRv-Yd-agI" customClass="RowController">
+                                    <group key="rootItem" width="1" alignment="left" id="ros-wp-4xS">
+                                        <items>
+                                            <label alignment="left" text="Row with a label" id="sNh-u8-Kyz"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabel" destination="sNh-u8-Kyz" id="frf-9d-JhU"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="9vF-4h-dtQ" id="ykm-92-hKA"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--ModalInterfaceController-->
+        <scene sceneID="mNG-ty-tcs">
+            <objects>
+                <controller identifier="ModalInterfaceController" id="64T-fC-rpM" customClass="ModalInterfaceController">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="The modal" textAlignment="left" numberOfLines="0" id="uqM-tu-aWW"/>
+                    </items>
+                    <connections>
+                        <outlet property="modalLabel" destination="uqM-tu-aWW" id="4ov-5e-Tf2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="427" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
