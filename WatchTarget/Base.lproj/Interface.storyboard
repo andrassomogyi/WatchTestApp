@@ -27,10 +27,45 @@
                     </items>
                     <connections>
                         <outlet property="table" destination="9vF-4h-dtQ" id="ykm-92-hKA"/>
+                        <segue destination="dSD-4T-hGi" kind="relationship" relationship="nextPage" id="w63-3q-kOX"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="-7" y="347"/>
+        </scene>
+        <!--Page2 Interface Controller-->
+        <scene sceneID="viq-cb-uO3">
+            <objects>
+                <controller id="dSD-4T-hGi" customClass="Page2InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Button" id="ERH-Us-8os">
+                            <connections>
+                                <action selector="nextButtonTapped" destination="dSD-4T-hGi" id="4OX-fM-gxo"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="r71-Mw-d8h" kind="relationship" relationship="nextPage" id="yQ2-rM-5SP"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="198" y="347"/>
+        </scene>
+        <!--Page3 Interface Controller-->
+        <scene sceneID="u4n-Hb-Sci">
+            <objects>
+                <controller id="r71-Mw-d8h" customClass="Page3InterfaceController">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="GWl-XC-Pso">
+                            <items>
+                                <label alignment="center" text="Label" id="TjY-rm-pLQ"/>
+                                <button width="1" alignment="center" title="Button" id="eQQ-d1-4hE"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="403" y="347"/>
         </scene>
         <!--ModalInterfaceController-->
         <scene sceneID="mNG-ty-tcs">
@@ -44,7 +79,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="427" y="347"/>
+            <point key="canvasLocation" x="-7" y="649"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -61,7 +96,7 @@
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="235" y="672"/>
+            <point key="canvasLocation" x="-7" y="890"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -77,14 +112,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="235" y="1001"/>
+            <point key="canvasLocation" x="-7" y="1118"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController"/>
             </objects>
-            <point key="canvasLocation" x="553" y="1001"/>
+            <point key="canvasLocation" x="211" y="1118"/>
         </scene>
     </scenes>
 </document>
