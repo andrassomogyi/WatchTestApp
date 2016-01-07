@@ -27,6 +27,7 @@
 		D6D596331C3D70B600240FE4 /* ModalInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D596321C3D70B600240FE4 /* ModalInterfaceController.m */; };
 		D6D596361C3D9DE400240FE4 /* Page2InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D596351C3D9DE400240FE4 /* Page2InterfaceController.m */; };
 		D6D596391C3DA55600240FE4 /* Page3InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D596381C3DA55600240FE4 /* Page3InterfaceController.m */; };
+		D6D5963C1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D5963B1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		D6D596351C3D9DE400240FE4 /* Page2InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page2InterfaceController.m; sourceTree = "<group>"; };
 		D6D596371C3DA55600240FE4 /* Page3InterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page3InterfaceController.h; sourceTree = "<group>"; };
 		D6D596381C3DA55600240FE4 /* Page3InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page3InterfaceController.m; sourceTree = "<group>"; };
+		D6D5963A1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalInterfaceControllerAccessedBySegue.h; sourceTree = "<group>"; };
+		D6D5963B1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalInterfaceControllerAccessedBySegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +225,8 @@
 				D6D596381C3DA55600240FE4 /* Page3InterfaceController.m */,
 				D6D596311C3D70B600240FE4 /* ModalInterfaceController.h */,
 				D6D596321C3D70B600240FE4 /* ModalInterfaceController.m */,
+				D6D5963A1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.h */,
+				D6D5963B1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 				D66FB41B1C3C5B8F001EBC41 /* NotificationController.m in Sources */,
 				D6D596391C3DA55600240FE4 /* Page3InterfaceController.m in Sources */,
 				D6D596331C3D70B600240FE4 /* ModalInterfaceController.m in Sources */,
+				D6D5963C1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.m in Sources */,
 				D66FB41E1C3C5B8F001EBC41 /* GlanceController.m in Sources */,
 				D66FB4211C3C5B8F001EBC41 /* ComplicationController.m in Sources */,
 			);

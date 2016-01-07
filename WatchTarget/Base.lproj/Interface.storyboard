@@ -40,7 +40,7 @@
                     <items>
                         <button width="1" alignment="left" title="Button" id="ERH-Us-8os">
                             <connections>
-                                <action selector="nextButtonTapped" destination="dSD-4T-hGi" id="4OX-fM-gxo"/>
+                                <segue destination="8pq-NX-rQ6" kind="modal" identifier="ModalSegue" id="ZSW-YJ-o0O"/>
                             </connections>
                         </button>
                     </items>
@@ -50,6 +50,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="198" y="347"/>
+        </scene>
+        <!--Modal Interface Controller Accessed By Segue-->
+        <scene sceneID="Hd9-xI-ZKt">
+            <objects>
+                <controller id="8pq-NX-rQ6" customClass="ModalInterfaceControllerAccessedBySegue">
+                    <items>
+                        <label alignment="left" text="Label" id="j0g-ke-Ugi"/>
+                    </items>
+                    <connections>
+                        <outlet property="contextLabel" destination="j0g-ke-Ugi" id="Ao8-fs-EnZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="284" y="697"/>
         </scene>
         <!--Page3 Interface Controller-->
         <scene sceneID="u4n-Hb-Sci">

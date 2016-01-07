@@ -1,24 +1,24 @@
 //
-//  Page2InterfaceController.m
+//  ModalInterfaceControllerAccessedBySegue.m
 //  WatchTestApp
 //
-//  Created by Somogyi András on 06/01/16.
+//  Created by Somogyi András on 07/01/16.
 //  Copyright © 2016 Somogyi András. All rights reserved.
 //
 
-#import "Page2InterfaceController.h"
+#import "ModalInterfaceControllerAccessedBySegue.h"
 
-@interface Page2InterfaceController ()
+@interface ModalInterfaceControllerAccessedBySegue ()
 
 @end
 
-@implementation Page2InterfaceController
+@implementation ModalInterfaceControllerAccessedBySegue
 
-#pragma mark - Lifecycle
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     
     // Configure interface objects here.
+    [self.contextLabel setText:context];
 }
 
 - (void)willActivate {
@@ -29,16 +29,6 @@
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
-}
-
-#pragma mark - Segue context
-
--(id)contextForSegueWithIdentifier:(NSString *)segueIdentifier{
-    if ([segueIdentifier isEqualToString:@"ModalSegue"]) {
-        return @"Context object";
-    }
-    
-    return nil;
 }
 
 @end
