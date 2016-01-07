@@ -73,7 +73,11 @@
                         <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="GWl-XC-Pso">
                             <items>
                                 <label alignment="center" text="Label" id="TjY-rm-pLQ"/>
-                                <button width="1" alignment="center" title="Button" id="eQQ-d1-4hE"/>
+                                <button width="1" alignment="center" title="Button" id="eQQ-d1-4hE">
+                                    <connections>
+                                        <action selector="sendMessageAction" destination="r71-Mw-d8h" id="9GE-i8-n48"/>
+                                    </connections>
+                                </button>
                             </items>
                         </group>
                     </items>
