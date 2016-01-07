@@ -134,10 +134,10 @@
 		D66FB3DB1C3C5B1A001EBC41 = {
 			isa = PBXGroup;
 			children = (
-				D66FB3E61C3C5B1A001EBC41 /* WatchTestApp */,
+				D66FB3E51C3C5B1A001EBC41 /* Products */,
 				D66FB4011C3C5B8F001EBC41 /* WatchTarget */,
 				D66FB4101C3C5B8F001EBC41 /* WatchTarget Extension */,
-				D66FB3E51C3C5B1A001EBC41 /* Products */,
+				D66FB3E61C3C5B1A001EBC41 /* WatchTestApp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,15 +154,15 @@
 		D66FB3E61C3C5B1A001EBC41 /* WatchTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				D66FB3E71C3C5B1A001EBC41 /* Supporting Files */,
 				D66FB3EA1C3C5B1A001EBC41 /* AppDelegate.h */,
 				D66FB3EB1C3C5B1A001EBC41 /* AppDelegate.m */,
+				D66FB3F31C3C5B1A001EBC41 /* Assets.xcassets */,
+				D66FB3F81C3C5B1A001EBC41 /* Info.plist */,
+				D66FB3F51C3C5B1A001EBC41 /* LaunchScreen.storyboard */,
+				D66FB3F01C3C5B1A001EBC41 /* Main.storyboard */,
 				D66FB3ED1C3C5B1A001EBC41 /* ViewController.h */,
 				D66FB3EE1C3C5B1A001EBC41 /* ViewController.m */,
-				D66FB3F01C3C5B1A001EBC41 /* Main.storyboard */,
-				D66FB3F31C3C5B1A001EBC41 /* Assets.xcassets */,
-				D66FB3F51C3C5B1A001EBC41 /* LaunchScreen.storyboard */,
-				D66FB3F81C3C5B1A001EBC41 /* Info.plist */,
-				D66FB3E71C3C5B1A001EBC41 /* Supporting Files */,
 			);
 			path = WatchTestApp;
 			sourceTree = "<group>";
@@ -172,15 +172,15 @@
 			children = (
 				D66FB3E81C3C5B1A001EBC41 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D66FB4011C3C5B8F001EBC41 /* WatchTarget */ = {
 			isa = PBXGroup;
 			children = (
-				D66FB4021C3C5B8F001EBC41 /* Interface.storyboard */,
 				D66FB4051C3C5B8F001EBC41 /* Assets.xcassets */,
 				D66FB4071C3C5B8F001EBC41 /* Info.plist */,
+				D66FB4021C3C5B8F001EBC41 /* Interface.storyboard */,
 			);
 			path = WatchTarget;
 			sourceTree = "<group>";
@@ -189,17 +189,11 @@
 			isa = PBXGroup;
 			children = (
 				D6D5962D1C3D668500240FE4 /* Controllers */,
+				D66FB4111C3C5B8F001EBC41 /* Supporting Files */,
+				D66FB4221C3C5B8F001EBC41 /* Assets.xcassets */,
 				D66FB4161C3C5B8F001EBC41 /* ExtensionDelegate.h */,
 				D66FB4171C3C5B8F001EBC41 /* ExtensionDelegate.m */,
-				D66FB4191C3C5B8F001EBC41 /* NotificationController.h */,
-				D66FB41A1C3C5B8F001EBC41 /* NotificationController.m */,
-				D66FB41C1C3C5B8F001EBC41 /* GlanceController.h */,
-				D66FB41D1C3C5B8F001EBC41 /* GlanceController.m */,
-				D66FB41F1C3C5B8F001EBC41 /* ComplicationController.h */,
-				D66FB4201C3C5B8F001EBC41 /* ComplicationController.m */,
-				D66FB4221C3C5B8F001EBC41 /* Assets.xcassets */,
 				D66FB4241C3C5B8F001EBC41 /* Info.plist */,
-				D66FB4111C3C5B8F001EBC41 /* Supporting Files */,
 			);
 			path = "WatchTarget Extension";
 			sourceTree = "<group>";
@@ -209,26 +203,64 @@
 			children = (
 				D66FB4121C3C5B8F001EBC41 /* PushNotificationPayload.apns */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D6D5962D1C3D668500240FE4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D6D5962E1C3D669900240FE4 /* RowController.h */,
-				D6D5962F1C3D669900240FE4 /* RowController.m */,
+				D6D596401C3E7E0900240FE4 /* App */,
+				D6D5963F1C3E7DBF00240FE4 /* Complication */,
+				D6D5963E1C3E7D9F00240FE4 /* Glance */,
+				D6D5963D1C3E7D9000240FE4 /* Notification */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D6D5963D1C3E7D9000240FE4 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				D66FB4191C3C5B8F001EBC41 /* NotificationController.h */,
+				D66FB41A1C3C5B8F001EBC41 /* NotificationController.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		D6D5963E1C3E7D9F00240FE4 /* Glance */ = {
+			isa = PBXGroup;
+			children = (
+				D66FB41C1C3C5B8F001EBC41 /* GlanceController.h */,
+				D66FB41D1C3C5B8F001EBC41 /* GlanceController.m */,
+			);
+			path = Glance;
+			sourceTree = "<group>";
+		};
+		D6D5963F1C3E7DBF00240FE4 /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				D66FB41F1C3C5B8F001EBC41 /* ComplicationController.h */,
+				D66FB4201C3C5B8F001EBC41 /* ComplicationController.m */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
+		D6D596401C3E7E0900240FE4 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				D66FB4131C3C5B8F001EBC41 /* InterfaceController.h */,
 				D66FB4141C3C5B8F001EBC41 /* InterfaceController.m */,
-				D6D596341C3D9DE400240FE4 /* Page2InterfaceController.h */,
-				D6D596351C3D9DE400240FE4 /* Page2InterfaceController.m */,
-				D6D596371C3DA55600240FE4 /* Page3InterfaceController.h */,
-				D6D596381C3DA55600240FE4 /* Page3InterfaceController.m */,
 				D6D596311C3D70B600240FE4 /* ModalInterfaceController.h */,
 				D6D596321C3D70B600240FE4 /* ModalInterfaceController.m */,
 				D6D5963A1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.h */,
 				D6D5963B1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.m */,
+				D6D596341C3D9DE400240FE4 /* Page2InterfaceController.h */,
+				D6D596351C3D9DE400240FE4 /* Page2InterfaceController.m */,
+				D6D596371C3DA55600240FE4 /* Page3InterfaceController.h */,
+				D6D596381C3DA55600240FE4 /* Page3InterfaceController.m */,
+				D6D5962E1C3D669900240FE4 /* RowController.h */,
+				D6D5962F1C3D669900240FE4 /* RowController.m */,
 			);
-			name = Controllers;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +439,7 @@
 				D66FB3F11C3C5B1A001EBC41 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		D66FB3F51C3C5B1A001EBC41 /* LaunchScreen.storyboard */ = {
@@ -415,6 +448,7 @@
 				D66FB3F61C3C5B1A001EBC41 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		D66FB4021C3C5B8F001EBC41 /* Interface.storyboard */ = {
@@ -423,6 +457,7 @@
 				D66FB4031C3C5B8F001EBC41 /* Base */,
 			);
 			name = Interface.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
