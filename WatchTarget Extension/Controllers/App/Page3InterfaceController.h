@@ -11,4 +11,6 @@
 
 @interface Page3InterfaceController : WKInterfaceController
 
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *resultLabel;
+
 @end

@@ -47,9 +47,12 @@
             NSDictionary *messsageDictionary = @{@"Message" : [NSString stringWithFormat:@"This messasge was sent from your Watch %lu",(long)self.tapped]};
             [session sendMessage:messsageDictionary
                     replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
-                        ;
+                        NSString *result = [replyMessage[@"resultCount"] stringValue];
+                        NSLog(@"%@",result);
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self.resultLabel setText:result];
+                        });
                     } errorHandler:^(NSError * _Nonnull error) {
-                        ;
                     }];
         }
     }

@@ -81,6 +81,9 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="resultLabel" destination="TjY-rm-pLQ" id="TQs-ng-5Dw"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="403" y="347"/>
