@@ -111,9 +111,6 @@
 		D6D596381C3DA55600240FE4 /* Page3InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page3InterfaceController.m; sourceTree = "<group>"; };
 		D6D5963A1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalInterfaceControllerAccessedBySegue.h; sourceTree = "<group>"; };
 		D6D5963B1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalInterfaceControllerAccessedBySegue.m; sourceTree = "<group>"; };
-		D6D596411C3E99D800240FE4 /* WatchTarget Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WatchTarget Extension.entitlements"; sourceTree = "<group>"; };
-		D6D596421C3E9B8A00240FE4 /* WatchTestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WatchTestApp.entitlements; sourceTree = "<group>"; };
-		D6D596431C3E9BE500240FE4 /* WatchTarget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WatchTarget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +154,6 @@
 		D66FB3E61C3C5B1A001EBC41 /* WatchTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				D6D596421C3E9B8A00240FE4 /* WatchTestApp.entitlements */,
 				D66FB3E71C3C5B1A001EBC41 /* Supporting Files */,
 				D66FB3EA1C3C5B1A001EBC41 /* AppDelegate.h */,
 				D66FB3EB1C3C5B1A001EBC41 /* AppDelegate.m */,
@@ -182,7 +178,6 @@
 		D66FB4011C3C5B8F001EBC41 /* WatchTarget */ = {
 			isa = PBXGroup;
 			children = (
-				D6D596431C3E9BE500240FE4 /* WatchTarget.entitlements */,
 				D66FB4051C3C5B8F001EBC41 /* Assets.xcassets */,
 				D66FB4071C3C5B8F001EBC41 /* Info.plist */,
 				D66FB4021C3C5B8F001EBC41 /* Interface.storyboard */,
@@ -193,7 +188,6 @@
 		D66FB4101C3C5B8F001EBC41 /* WatchTarget Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D6D596411C3E99D800240FE4 /* WatchTarget Extension.entitlements */,
 				D6D5962D1C3D668500240FE4 /* Controllers */,
 				D66FB4111C3C5B8F001EBC41 /* Supporting Files */,
 				D66FB4221C3C5B8F001EBC41 /* Assets.xcassets */,
@@ -339,7 +333,7 @@
 						DevelopmentTeam = GSE39KA5J6;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -348,7 +342,7 @@
 						DevelopmentTeam = GSE39KA5J6;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -357,7 +351,7 @@
 						DevelopmentTeam = GSE39KA5J6;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -571,7 +565,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WatchTestApp/WatchTestApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WatchTestApp/Info.plist;
@@ -586,7 +579,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WatchTestApp/WatchTestApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WatchTestApp/Info.plist;
@@ -601,7 +593,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "WatchTarget Extension/WatchTarget Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchTarget Extension/Info.plist";
@@ -620,7 +611,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "WatchTarget Extension/WatchTarget Extension.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchTarget Extension/Info.plist";
@@ -639,7 +629,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WatchTarget/WatchTarget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = WatchTarget_Extension;
@@ -658,7 +647,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WatchTarget/WatchTarget.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = WatchTarget_Extension;
