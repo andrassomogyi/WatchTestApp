@@ -23,6 +23,7 @@
 		D66FB4211C3C5B8F001EBC41 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FB4201C3C5B8F001EBC41 /* ComplicationController.m */; };
 		D66FB4231C3C5B8F001EBC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66FB4221C3C5B8F001EBC41 /* Assets.xcassets */; };
 		D66FB4271C3C5B8F001EBC41 /* WatchTarget.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D66FB4001C3C5B8F001EBC41 /* WatchTarget.app */; };
+		D67EAF521C42D5E60030BD1E /* CatNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67EAF511C42D5E60030BD1E /* CatNotificationController.swift */; };
 		D6D596301C3D669900240FE4 /* RowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D5962F1C3D669900240FE4 /* RowController.m */; };
 		D6D596331C3D70B600240FE4 /* ModalInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D596321C3D70B600240FE4 /* ModalInterfaceController.m */; };
 		D6D596361C3D9DE400240FE4 /* Page2InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D596351C3D9DE400240FE4 /* Page2InterfaceController.m */; };
@@ -101,6 +102,8 @@
 		D66FB4201C3C5B8F001EBC41 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
 		D66FB4221C3C5B8F001EBC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D66FB4241C3C5B8F001EBC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D67EAF501C42D5E60030BD1E /* WatchTarget Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchTarget Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		D67EAF511C42D5E60030BD1E /* CatNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatNotificationController.swift; sourceTree = "<group>"; };
 		D6D5962E1C3D669900240FE4 /* RowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowController.h; sourceTree = "<group>"; };
 		D6D5962F1C3D669900240FE4 /* RowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowController.m; sourceTree = "<group>"; };
 		D6D596311C3D70B600240FE4 /* ModalInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalInterfaceController.h; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 			children = (
 				D66FB4191C3C5B8F001EBC41 /* NotificationController.h */,
 				D66FB41A1C3C5B8F001EBC41 /* NotificationController.m */,
+				D67EAF511C42D5E60030BD1E /* CatNotificationController.swift */,
+				D67EAF501C42D5E60030BD1E /* WatchTarget Extension-Bridging-Header.h */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 		D66FB3DC1C3C5B1A001EBC41 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Somogyi András";
 				TargetAttributes = {
@@ -426,6 +432,7 @@
 				D6D596361C3D9DE400240FE4 /* Page2InterfaceController.m in Sources */,
 				D66FB4181C3C5B8F001EBC41 /* ExtensionDelegate.m in Sources */,
 				D66FB4151C3C5B8F001EBC41 /* InterfaceController.m in Sources */,
+				D67EAF521C42D5E60030BD1E /* CatNotificationController.swift in Sources */,
 				D66FB41B1C3C5B8F001EBC41 /* NotificationController.m in Sources */,
 				D6D596391C3DA55600240FE4 /* Page3InterfaceController.m in Sources */,
 				D6D596331C3D70B600240FE4 /* ModalInterfaceController.m in Sources */,
@@ -593,6 +600,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchTarget Extension/Info.plist";
@@ -602,6 +610,8 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchTarget Extension/Controllers/Notification/WatchTarget Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -611,6 +621,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchTarget Extension/Info.plist";
@@ -620,6 +631,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchTarget Extension/Controllers/Notification/WatchTarget Extension-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -631,6 +643,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = WatchTarget_Extension;
 				INFOPLIST_FILE = WatchTarget/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = sa.WatchTestApp.watchkitapp;
@@ -649,6 +662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = WatchTarget_Extension;
 				INFOPLIST_FILE = WatchTarget/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = sa.WatchTestApp.watchkitapp;

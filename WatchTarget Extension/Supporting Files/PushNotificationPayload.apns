@@ -2,14 +2,14 @@
     "aps": {
         "alert": {
             "body": "Notification",
-            "title": "Optional title"
+            "title": "A cat!"
         },
         "category": "myCategory"
     },
     
     "WatchKit Simulator Actions": [
         {
-            "title": "First Button",
+            "title": "Go to app",
             "identifier": "firstButtonAction"
         }
     ],
