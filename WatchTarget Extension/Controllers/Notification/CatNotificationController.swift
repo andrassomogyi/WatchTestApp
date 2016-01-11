@@ -19,8 +19,13 @@ class CatNotificationController: WKUserNotificationInterfaceController {
     let apiKey = ""
     
     override func didReceiveRemoteNotification(remoteNotification: [NSObject : AnyObject], withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
-        let catSession = NSURLSession.sharedSession()
-        let catRequest = NSURLRequest.init(URL: (URL: NSURL(string: catUrl + apiKey)!), cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringCacheData, timeoutInterval: 60.0)
+        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        configuration.requestCachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
+        configuration.timeoutIntervalForRequest = 60.0
+        
+        let catRequest = NSURLRequest.init(URL: NSURL(string: catUrl + apiKey)!)
+
+        let catSession = NSURLSession(configuration: configuration)
         let catTask = catSession.dataTaskWithRequest(catRequest) { (catData, catResponse, catError) -> Void in
             if (catError == nil) {
                 self.catImage.setImageData(catData)
