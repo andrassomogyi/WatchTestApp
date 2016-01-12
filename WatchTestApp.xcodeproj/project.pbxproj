@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60EC9BC1C43D7E400E0A393 /* CatInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60EC9BB1C43D7E400E0A393 /* CatInterfaceController.swift */; };
 		D66FB3E91C3C5B1A001EBC41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FB3E81C3C5B1A001EBC41 /* main.m */; };
 		D66FB3EC1C3C5B1A001EBC41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FB3EB1C3C5B1A001EBC41 /* AppDelegate.m */; };
 		D66FB3EF1C3C5B1A001EBC41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66FB3EE1C3C5B1A001EBC41 /* ViewController.m */; };
@@ -74,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D60EC9BB1C43D7E400E0A393 /* CatInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatInterfaceController.swift; sourceTree = "<group>"; };
 		D66FB3E41C3C5B1A001EBC41 /* WatchTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66FB3E81C3C5B1A001EBC41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D66FB3EA1C3C5B1A001EBC41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				D6D596381C3DA55600240FE4 /* Page3InterfaceController.m */,
 				D6D5962E1C3D669900240FE4 /* RowController.h */,
 				D6D5962F1C3D669900240FE4 /* RowController.m */,
+				D60EC9BB1C43D7E400E0A393 /* CatInterfaceController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				D66FB41B1C3C5B8F001EBC41 /* NotificationController.m in Sources */,
 				D6D596391C3DA55600240FE4 /* Page3InterfaceController.m in Sources */,
 				D6D596331C3D70B600240FE4 /* ModalInterfaceController.m in Sources */,
+				D60EC9BC1C43D7E400E0A393 /* CatInterfaceController.swift in Sources */,
 				D6D5963C1C3E791400240FE4 /* ModalInterfaceControllerAccessedBySegue.m in Sources */,
 				D66FB41E1C3C5B8F001EBC41 /* GlanceController.m in Sources */,
 				D66FB4211C3C5B8F001EBC41 /* ComplicationController.m in Sources */,
@@ -603,6 +607,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "WatchTarget Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sa.WatchTestApp.watchkitapp.watchkitextension;
@@ -624,6 +629,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "WatchTarget Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sa.WatchTestApp.watchkitapp.watchkitextension;

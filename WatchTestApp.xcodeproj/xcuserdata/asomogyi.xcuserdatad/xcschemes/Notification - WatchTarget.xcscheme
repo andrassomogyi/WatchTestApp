@@ -80,7 +80,7 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "WatchTarget Extension/PushNotificationPayload.apns">
+      notificationPayloadFile = "WatchTarget Extension/Supporting Files/PushNotificationPayload.apns">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.carousel"
@@ -112,7 +112,7 @@
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "WatchTarget Extension/PushNotificationPayload.apns">
+      notificationPayloadFile = "WatchTarget Extension/Supporting Files/PushNotificationPayload.apns">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.carousel"

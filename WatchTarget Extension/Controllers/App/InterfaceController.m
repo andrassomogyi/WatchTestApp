@@ -8,6 +8,7 @@
 
 #import "InterfaceController.h"
 #import "RowController.h"
+#import "WatchTarget_Extension-Swift.h"
 
 
 @interface InterfaceController()
@@ -25,6 +26,7 @@
 
     // Configure interface objects here.
     self.dataForTable = @[@"Alice",@"White Knight",@"Red Queen"];
+
 }
 
 - (void)willActivate {
@@ -32,6 +34,7 @@
     [super willActivate];
     [self setupTable:self.dataForTable];
 }
+
 
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
@@ -50,8 +53,15 @@
 #pragma mark - Table delegate methods
 -(void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
     [self presentControllerWithName:@"ModalInterfaceController" context:self.dataForTable[rowIndex]];
+//    [self pushControllerWithName:@"ModalInterfaceController" context:self.dataForTable[rowIndex]];
 }
 
+-(void)handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)remoteNotification {
+    dispatch_async(dispatch_get_main_queue(), ^{
+            [self presentControllerWithName:@"ModalInterfaceController" context:self.dataForTable[0]];
+    });
+    NSLog(@"Test");
+}
 @end
 
 

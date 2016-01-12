@@ -10,7 +10,7 @@
     "WatchKit Simulator Actions": [
         {
             "title": "Go to app",
-            "identifier": "firstButtonAction"
+            "identifier": "goToAppAction"
         }
     ],
     
